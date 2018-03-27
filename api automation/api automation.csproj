@@ -62,9 +62,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Apartments.cs" />
+    <Compile Include="APITest.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="CreateAPI.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="Employee1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

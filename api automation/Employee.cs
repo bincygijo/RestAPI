@@ -7,11 +7,12 @@
         public bool trusted { get; set; }
         public string id { get; set; }
 
-        public Employee(string firstName, string lastName, bool trusted)
+        public Employee( string firstName, string lastName, bool trusted)
         {
             this.firstName = firstName;
             this.lastName = lastName;
             this.trusted = trusted;
+           
         }
 
         public Employee()

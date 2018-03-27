@@ -13,7 +13,7 @@ namespace api_automation
     public class CreateAPI
     {
         public string Url = "http://localhost:8080/landlords";
-        public string postData = "{\"firstName\": \"ann\", \"lastName\": \"george\", \"trusted\": false}";
+        public string postData = "{\"firstName\": \"ann11\", \"lastName\": \"george11\", \"trusted\": false}";
         public string postData1 = "{\"firstName\": \"ajith\", \"lastName\": \"neha\", \"trusted\": true}";
 
         [Test]
@@ -38,6 +38,8 @@ namespace api_automation
            Console.WriteLine(response.Content);
            Console.WriteLine(response.StatusCode);
 
+           Assert.IsTrue(response.StatusCode == HttpStatusCode.Created);
+
             // Test Validation
             if (response.StatusCode == HttpStatusCode.Created)
                 Console.WriteLine("Test Successfull");
@@ -60,6 +62,11 @@ namespace api_automation
 
             Console.WriteLine(response.Content);
             Console.WriteLine(response.StatusCode);
+
+            Assert.IsTrue(response.StatusCode == HttpStatusCode.OK);
+           // Assert.IsTrue(!string.IsNullOrEmpty(response.Data)); // the response is not empty
+
+            //Assert.AreEqual(2, response.Data.Length);
 
             // Test Validation
             if (response.StatusCode == HttpStatusCode.OK)
