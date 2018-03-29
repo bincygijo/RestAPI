@@ -61,11 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Apartments.cs" />
-    <Compile Include="APITest.cs" />
+    <Compile Include="API\Apartments.cs" />
+    <Compile Include="API\Landlord.cs" />
+    <Compile Include="Tests\APITest.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="CreateAPI.cs" />
-    <Compile Include="Employee.cs" />
+    <Compile Include="API\Employee.cs" />
     <Compile Include="Employee1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

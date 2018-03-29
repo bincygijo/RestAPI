@@ -1,4 +1,6 @@
-﻿namespace api_automation
+﻿using NUnit.Framework;
+
+namespace api_automation
 {
     public class Employee
     {
@@ -19,7 +21,15 @@
         {
         }
 
-
+        public static void CompareEmployees(Employee actual, Employee expected)
+        {
+            Assert.Multiple(() =>
+            {
+                Assert.AreEqual(actual.firstName, expected.firstName);
+                Assert.AreEqual(actual.lastName, expected.lastName);
+                Assert.AreEqual(actual.trusted, expected.trusted);
+            });
+        }
         // public Apartments apartments { get; set; }
     }
 }

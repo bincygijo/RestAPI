@@ -47,7 +47,7 @@ namespace api_automation
                 Console.WriteLine("Test Failed");
 
         }
-        [Test]
+ 
         public void GET()
         {
             var client = new RestClient(Url);
